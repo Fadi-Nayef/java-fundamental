@@ -7,16 +7,7 @@ import java.io.File;
 import java.util.*;
 
 public class Library {
-    public boolean someLibraryMethod() {
-        return true;
-    }
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) {
-        System.out.println(new Library().getGreeting());
-
     }
 
     public static int findMinVal(int[] arr){
@@ -78,6 +69,7 @@ public class Library {
                 tally.put(vote,1);
             }
         }
+
         String winner = itemWithMostVotes + " received the most votes";
         System.out.println(winner);
         return winner;

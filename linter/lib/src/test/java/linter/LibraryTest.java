@@ -9,18 +9,7 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
-
 public class LibraryTest {
-    @Test public void someLibraryMethodReturnsTrue() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
-    }
-    @Test public void testAppHasAGreeting() {
-        Library classUnderTest = new Library();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
-    }
 
     @Test public void testFindMinVal(){
         int[] test1 = {66, 64, 58, 65, 71, 57, 60}; //57
