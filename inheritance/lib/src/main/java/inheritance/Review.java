@@ -1,30 +1,6 @@
 package inheritance;
 
-//public class Review extends Resturant{
-//private String body ;
-//private String author ;
-//
-//
-//    public Review(String name, Integer stars, String price, String body , String author) {
-//        super(name, stars, price);
-//    this.author=author;
-//    this.body=body;
-//
-//    }
-//
-//    @Override
-//    public void setStars(Integer stars) {
-//        super.setStars(super.getStars());
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return "Review{" +
-//                "body='" + body + '\'' +
-//                ", author='" + author + '\'' +
-//                '}';
-//    }
-//}
+
 import java.util.ArrayList;
 
 public class Review {
