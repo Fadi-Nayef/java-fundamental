@@ -1,36 +1,7 @@
 package inheritance;
 
-//public class Review extends Resturant{
-//private String body ;
-//private String author ;
-//
-//
-//    public Review(String name, Integer stars, String price, String body , String author) {
-//        super(name, stars, price);
-//    this.author=author;
-//    this.body=body;
-//
-//    }
-//
-//    @Override
-//    public void setStars(Integer stars) {
-//        super.setStars(super.getStars());
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return "Review{" +
-//                "body='" + body + '\'' +
-//                ", author='" + author + '\'' +
-//                '}';
-//    }
-//}
-import java.util.ArrayList;
 
 public class Review {
-    //public ArrayList<Review> feedback;
-
-    // public Restaurant restaurantImAbout;
 
     private String body;
     private String author;
@@ -40,8 +11,11 @@ public class Review {
         this.body = body;
         this.author = author;
         this.stars = stars;
-        //this.feedback = new ArrayList<Review>();
     }
+
+    public int getStars() { return stars; }
+
+    public void setStars(int stars) { this.stars = stars; }
 
     public String getBody() {
         return body;
