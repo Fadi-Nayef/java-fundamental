@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Theater extends Review {
 
     private ArrayList<String> movies = new ArrayList<String>();
-    private Review reviews=new Review();
+    private Review reviews = new Review();
 
     private String name;
 
@@ -26,7 +26,7 @@ public class Theater extends Review {
         this.movies.add(movieName);
     }
 
-    public void removeMovie(String movieName){
+    public void removeMovie(String movieName) {
         this.movies.remove(movieName);
     }
 
@@ -48,10 +48,5 @@ public class Theater extends Review {
                 ", name='" + name + '\'' +
                 '}';
     }
-
-//    public ArrayList<Review> getReviews() {
-//        return reviews;
-//    }
-
 
 }
