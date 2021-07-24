@@ -1,22 +1,21 @@
 package inheritance;
 
 
-import java.util.ArrayList;
 
-public class Review {
-    //public ArrayList<Review> feedback;
+public  class Review {
 
-    // public Restaurant restaurantImAbout;
-
-    private String body;
-    private String author;
+    public String body;
+    public String author;
     public int stars;
 
     public Review(String body, String author, int stars) {
         this.body = body;
         this.author = author;
         this.stars = stars;
-        //this.feedback = new ArrayList<Review>();
+    }
+
+    public Review() {
+
     }
 
     public String getBody() {
@@ -34,6 +33,15 @@ public class Review {
     public void setAuthor(String author) {
         this.author = author;
     }
+
+    public int getStars() {
+        return stars;
+    }
+
+    public void setStars(int stars) {
+        this.stars = stars;
+    }
+
 
     @Override
     public String toString() {

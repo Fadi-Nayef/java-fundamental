@@ -6,13 +6,22 @@ package inheritance;
 public class Main {
     public static void main(String[] args) {
 
-        Review review1 = new Review("best Restaurant ", "NoBody", 5);
+        var buffShop = new Shop("name","$$","My Fav");
+        Review review1 = new Review("my Fav one ", "NoBody", 5) {
+
+        };
         System.out.println(review1.toString());
 
-        Resturant bite = new Resturant("bite", 5, "$$");
-        System.out.println(bite.toString());
+        Restaurant buff = new Restaurant("Buff", 5, "$$");
+        var theater = new Theater("theater");
+        theater.addMovie("lalalala");
+        theater.addMovie("lelelelelele");
+        theater.removeMovie("lalalala");
+        System.out.println(theater.toString());
+        System.out.println(buff.toString());
+        System.out.println(buffShop.toString());
 
 
 
-        }
+    }
 }

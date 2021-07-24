@@ -7,24 +7,21 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class MainTest {
+class LibraryTest {
 
-//    @Test void someLibraryMethodReturnsTrue() {
-//        Library classUnderTest = new Library();
-//        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
-//    }
-@Test
+
+    @Test
     public void testReview(){
-        Review review1 = new Review("Best Restaurant", "SomeOne", 5);
+        Review review1 = new Review("Fav one", "noOne", 5);
 //
-        Assertions.assertEquals( "Review{body='Best Restaurant', author='SomeOne', stars=5}", review1.toString());
+        Assertions.assertEquals( "Review{body='Fav one', author='noOne', stars=5}", review1.toString());
     }
-    public void testResturant(){
-     var bite = new Resturant("bite", 5, "$$");
+    public void testRestaurant(){
+        var buff = new Restaurant("Buff", 5, "$$");
 
     }
 
     @Test public void toStringTest(){
-        assertTrue(true, ("Restaurant{name='bite', stars=5, price='$$'}"));
+        assertTrue(true, ("Restaurant{name='Buff', stars=5, price='$$'}"));
     }
 }

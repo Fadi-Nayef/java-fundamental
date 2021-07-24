@@ -1,48 +1,64 @@
 package inheritance;
 
-import java.util.ArrayList;
-
-public class Shop implements AddReview{
+public class Shop extends Review{
     private String name;
-    private String dollarSignNum;
+    private String price;
     private String description;
-    private ArrayList<Review> reviews;
+    private Review reviews;
 
-    public Shop(String name, String dollarSignNum, String description) {
+    public Shop(String name, String price, String description) {
         this.name = name;
-        this.dollarSignNum = dollarSignNum;
+        this.price = price;
         this.description = description;
-        reviews = new ArrayList<>();
+    }
+
+    public Shop(Review reviews) {
+        this.reviews = reviews;
+    }
+
+    public void setReviews(Review reviews) {
+        this.reviews = reviews;
+    }
+
+    public Shop(String body, String author, int stars, String name, String price, String description) {
+        super(body, author, stars);
+        this.name = name;
+        this.price = price;
+        this.description = description;
+
+    }
+
+
+    public Shop(String body, String author, int stars) {
+        super(body, author, stars);
     }
 
     public String getName() {
         return name;
     }
 
-    public String getDollarSignNum() {
-        return dollarSignNum;
+    public String getPrice() {
+        return price;
     }
 
     public String getDescription() {
         return description;
     }
 
-    public ArrayList<Review> getReviews() {
-        return reviews;
+    public String getReviews() {
+        return reviews.toString();
     }
 
-    @Override
-    public void addReview(Review review){
-        reviews.add(review);
-    }
 
     @Override
     public String toString() {
         return "Shop{" +
                 "name='" + name + '\'' +
-                ", dollarSignNum=" + dollarSignNum +
+                ", price='" + price + '\'' +
                 ", description='" + description + '\'' +
                 ", reviews=" + reviews +
                 '}';
     }
+
+
 }
